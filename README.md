@@ -1,2 +1,3 @@
-# codingPortfolio
-Photography's cool, but I want a stable job.
+# Documentation
+Pure HTML CSS at the moment.
+Incorporating Ruby later.
