@@ -22,6 +22,10 @@ section {
   box-shadow: none;
 }
 
+.padding {
+  padding-top: 20px;
+}
+
 #projects {
   padding-top: 100px;
 }

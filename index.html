@@ -8,7 +8,7 @@
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-  <link href="text.css" rel="stylesheet">
+  <link href="css/text.css" rel="stylesheet">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">-->
 </head>
 
@@ -26,26 +26,28 @@
       </v-toolbar>
 
       <div id="home">
-        <v-parallax src="/parallax_50.jpg" class="text-xs-center" height=850>
+        <v-parallax src="img/parallax_50.jpg" class="text-xs-center" height=850>
           <h1 class="display-3 text-xs-center mb-1 shadow" data-aos="fade-left">Matthew Wong</h1>
           <p class="subheading mb-3 text-xs-center shadow" data-aos="fade-right"> Programmer. Photographer.</p>
         </v-parallax>
       </div>
 
       <div id="projects">
-        <v-container grid-list-xs mt-3>
-          <v-layout row wrap>
-            <v-flex xs6 id="imageholder" class="text-xs-center">
-              <img src="halfview_50.png" alt="Nier Design" width="200" data-aos="fade-up" data-aos-duration=500 >
+        <v-container>
+          <v-layout align-center fill-height justify-center row wrap>
+            <v-flex md6 id="imageholder" class="text-xs-center">
+              <img src="img/fullsize.png" alt="Nier Design" width="300" data-aos="fade-up" data-aos-duration=500 >
             </v-flex>
             <v-flex>
               <v-card flat class="transparent">
-                <v-card-title class="white--text">
-                  <h2 class="display-2 text-xs-center mb-1 shadow" data-aos="fade-left">QuickPlay</h2>
+                <v-card-title>
+                <div id="quickplayText">
+                  <h6 class="mb-1 shadow" data-aos="fade-left">QuickPlay</h6>
+                  <div class="grey--text text--darken-4 padding" data-aos="fade-right" ><h3>QuickPlay--a matchmaking service designed for classic games without matchmaking.</h3></div>
+                </div>
                 </v-card-title>
-                <v-card-text class="grey--text text--darken-4">QuickPlay--a matchmaking service designed for classic games without matchmaking.</v-card-text>
                 <v-card-actions>
-                  <v-btn flat href="http://github.com/makishanuto/quickplay">GitHub</v-btn>
+                  <v-btn flat href="http://github.com/makishanuto/quickplay" data-aos="fade-up">GitHub</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
