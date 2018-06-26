@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="text.css" rel="stylesheet">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">-->
 </head>
+
 <body>
   <div id="app">
     <v-app>
-      <v-content>
-        <v-container>Just a simple website.</v-container>
-      </v-content>
+
+      <v-toolbar id="navbar" class="transparent" scroll-off-screen scroll-target="#resume" absolute dark>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn flat v-scroll-to="'#home'" class="buttons" data-aos="fade-down">Home</v-btn>
+          <v-btn flat v-scroll-to="'#projects'" class="buttons" data-aos="fade-down" data-aos-delay=100>Projects</v-btn>
+          <v-btn flat v-scroll-to="'#resume'" class="buttons" data-aos="fade-down" data-aos-delay=200>Resume</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+
+      <div id="home">
+        <v-parallax src="/parallax_50.jpg" class="text-xs-center" height=850>
+          <h1 class="display-3 text-xs-center mb-1 shadow" data-aos="fade-left">Matthew Wong</h1>
+          <p class="subheading mb-3 text-xs-center shadow" data-aos="fade-right"> Programmer. Photographer.</p>
+        </v-parallax>
+      </div>
+
+      <div id="projects">
+        <v-container grid-list-xs mt-3>
+          <v-layout row wrap>
+            <v-flex xs6 id="imageholder">
+              <img src="halfview_50.png" data-aos="fade-top" data-aos-duration=700 alt="Nier Design" width="200" align="middle" id="alignmiddle">
+            </v-flex>
+            <v-flex>
+              <v-card flat class="transparent">
+                <v-card-title class="white--text">
+                  <h2 class="display-2 text-xs-center mb-1 shadow" data-aos="fade-left">QuickPlay</h2>
+                </v-card-title>
+                <v-card-text class="grey--text text--darken-4">QuickPlay--a matchmaking service designed for classic games without matchmaking.</v-card-text>
+                <v-card-actions>
+                  <v-btn flat href="http://github.com/makishanuto/quickplay">GitHub</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-layout>
+        </v-container>
+
+      </div>
+
+      <div id="resume">
+        <v-card>
+        </v-card>
+        <v-card>
+        </v-card>
+        <v-card>
+        </v-card>
+      </div>
+
+
     </v-app>
   </div>
 
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+  <script src="https://unpkg.com/vue-scrollto"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    new Vue({ el: '#app' })
+    new Vue({
+      el: '#app'
+    })
+    AOS.init({
+      duration: 1000,
+    })
   </script>
 </body>
+
 </html>

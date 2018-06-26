@@ -1,0 +1,34 @@
+.display-3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-size: 43px;
+}
+
+.shadow {
+  text-shadow: 2px 2px 9px black;
+  subheading: 2px
+}
+
+section {
+  margin: 0px 0px 20px
+}
+.buttons {
+  text-shadow: 2px 2px 9px black;
+}
+
+.toolbar {
+  box-shadow: none;
+}
+
+#projects {
+  padding-top: 100px;
+}
+
+#imageholder {
+  img {
+    display:inline-block;
+    vertical-align: middle;
+  }
+}
