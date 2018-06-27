@@ -30,6 +30,9 @@ section {
   padding-top: 100px;
 }
 
+#screencap {
+  padding-right: 0px;
+}
 #imageholder {
   img {
     display:inline-block;
