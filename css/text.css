@@ -26,6 +26,10 @@ section {
   padding-top: 20px;
 }
 
+.disablepadding {
+  padding: 0px;
+}
+
 #projects {
   padding-top: 100px;
 }

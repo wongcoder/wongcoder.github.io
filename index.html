@@ -10,7 +10,7 @@
   <link href="css/text.css" rel="stylesheet">
   <title> Matthew Wong
   </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 
 <body>
@@ -34,28 +34,31 @@
       </div>
 
       <div id="projects">
+
+        <!-- QuickPlay -->
         <v-container>
           <v-layout align-center fill-height justify-center row wrap>
             <v-flex id="imageholder" class="text-xs-center text-md-right">
-              <img id="screencap" src="img/fullsize.png" alt="Nier Design" width="362" data-aos="fade-up" data-aos-duration=500 >
+              <img id="screencap" src="img/fullsize.png" alt="Nier Design" width="362" data-aos="fade-up" data-aos-duration=500>
             </v-flex>
             <v-flex md4>
               <v-card flat class="transparent">
                 <v-card-title>
-                <div id="quickplayText">
-                  <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
-                  <div class="grey--text text--darken-4 pt-2 headline" data-aos="fade-right"><h3>QuickPlay--a matchmaking service designed for classic games.</h3></div>
-                  <v-layout row>
-                    <v-flex xs6>
-                      <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Game together.</div>
-                      <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Can't play Mario Kart 64 online? No problem. Just queue up with QuickPlay.</div>
+                  <div id="quickplayText">
+                    <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
+                    <div class="grey--text text--darken-4 pt-2 headline" data-aos="fade-right">
+                      <h3>QuickPlay--a matchmaking service designed for classic games.</h3></div>
+                    <v-layout row>
+                      <v-flex xs6>
+                        <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Game together.</div>
+                        <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Can't play Mario Kart 64 online? No problem. Just queue up with QuickPlay.</div>
 
-                    </v-flex>
-                    <v-flex xs6 pl-3>
-                      <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Improve together.</div>
-                      <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Tired of getting stomped? An all new ELO system, just for you.</div>
-                    </v-flex>
-                </div>
+                      </v-flex>
+                      <v-flex xs6 pl-3>
+                        <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Improve together.</div>
+                        <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Tired of getting stomped? An all new ELO system, just for you.</div>
+                      </v-flex>
+                  </div>
                 </v-card-title>
                 <v-card-actions>
                   <v-btn flat href="http://github.com/makishanuto/quickplay" data-aos="fade-up">View on GitHub</v-btn>
@@ -65,18 +68,66 @@
             <v-layout>
         </v-container>
 
+        <!-- OpenChef -->
+        <div class="grey darken-2">
+          <v-container>
+            <v-layout align-center justify-center row wrap>
+              <v-flex md4>
+                <v-card flat class="transparent">
+                  <v-card-title>
+                    <div id="quickplayText">
+                      <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
+                      <div class="grey--text text--lighten-3 pt-2 headline" data-aos="fade-right">
+                        <h3>OpenChef--dine alone no more.</h3></div>
+                      <v-layout row>
+                        <v-flex xs6>
+                          <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Share.</div>
+                          <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>With OpenChef, you don't have to dine alone. Queue up and eat your favorite foods--together.</div>
+                        </v-flex>
+                        <v-flex xs6 pl-2>
+                          <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Discounts.</div>
+                          <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>Want to go to a buffet--but you're alone? No worries. One queue--and you suddenly have a group.</div>
+                        </v-flex>
+                    </div>
+                  </v-card-title>
+                </v-card>
+              </v-flex>
+              <v-flex>
+
+              </v-flex>
+              </v-layout>
+          </v-container>
+        </div>
+
+
       </div>
 
       <div id="resume">
-        <v-card>
-        </v-card>
-        <v-card>
-        </v-card>
-        <v-card>
-        </v-card>
+        <v-container>
+          <v-layout row wrap>
+            <v-flex xs4>
+
+            </v-flex>
+            <v-flex xs4>
+
+            </v-flex>
+            <v-flex xs4>
+
+            </v-flex>
+          </v-layout>
+        </v-container>
       </div>
 
-
+      <!-- footer -->
+      <v-footer height="auto" class="grey darken-2">
+        <v-layout row wrap justify-center align-content-center>
+          <v-flex xs12 class="text-xs-center">
+            <h6 class="subheading grey--text text--lighten-2">
+              <strong>Coded with Vuetify. A wongcode project. Matthew Wong - 2018</strong>
+            </h6 class>
+          </v-flex>
+        </v-layout>
+      </v-footer>
     </v-app>
   </div>
 
