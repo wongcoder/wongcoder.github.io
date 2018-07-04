@@ -1,10 +1,4 @@
-.display-3 {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  line-height: 46px;
-  font-size: 43px;
-}
+
 
 .shadow {
   text-shadow: 2px 2px 9px black;
@@ -18,9 +12,6 @@ section {
   text-shadow: 2px 2px 9px black;
 }
 
-.toolbar {
-  box-shadow: none;
-}
 
 .padding {
   padding-top: 20px;
@@ -42,4 +33,16 @@ section {
     display:inline-block;
     vertical-align: middle;
   }
+}
+
+#fjalla {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-size: 400%;
+}
+
+#navbar {
+  box-shadow: none;
 }
