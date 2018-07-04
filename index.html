@@ -36,7 +36,7 @@
         <v-container>
           <v-layout align-center fill-height justify-center row wrap>
             <v-flex id="imageholder" class="text-xs-center text-md-right">
-              <img id="screencap" src="img/fullsize.png" alt="Nier Design" width="362" data-aos="fade-up" data-aos-duration=500>
+              <img id="screencap" src="img/fullsize.png" alt="Nier Design" width="345px" data-aos="fade-up" data-aos-duration=500>
             </v-flex>
             <v-flex md4>
               <v-card flat class="transparent">
@@ -72,7 +72,7 @@
               <v-flex md4>
                 <v-card flat class="transparent">
                   <v-card-title>
-                    <div id="quickplayText">
+                    <div id="openChefText">
                       <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
                       <div class="grey--text text--lighten-3 pt-2 headline" data-aos="fade-right">
                         <h3>OpenChef--dine alone no more.</h3></div>
@@ -87,14 +87,49 @@
                         </v-flex>
                     </div>
                   </v-card-title>
+                  <v-card-actions>
+                    <v-btn flat href="http://github.com/makishanuto/openchef" data-aos="fade-up">View on GitHub</v-btn>
+                  </v-card-actions>
                 </v-card>
               </v-flex>
               <v-flex>
-
+                <!-- Image here -->
               </v-flex>
               </v-layout>
           </v-container>
         </div>
+
+        <!-- League of Korean -->
+        <v-container>
+          <v-layout align-center justify-center row wrap>
+            <v-flex md4>
+              <v-card flat class="transparent">
+                <v-card-title>
+                  <div id="leagueOfKoreanText">
+                    <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
+                    <div class="grey--text text--lighten-3 pt-2 headline" data-aos="fade-right">
+                      <h3>League of Legends--now in Korean.</h3></div>
+                    <v-layout row>
+                      <v-flex xs6>
+                        <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>A mod for you.</div>
+                        <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>League of Korean is an unofficially supported mod, designed to change your client's language into Korean. Perfect for people learning Korean.</div>
+                      </v-flex>
+                      <v-flex xs6 pl-2>
+                        <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Fully functional.</div>
+                        <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>Want to message your North American friends, but have the Korean langauge? Now you can. Coded in Electron, ready for you.</div>
+                      </v-flex>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn flat href="http://github.com/makishanuto/league-of-korean" data-aos="fade-up">View on GitHub</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            <v-flex>
+              <!-- Image here -->
+            </v-flex>
+            </v-layout>
+        </v-container>
 
 
       </div>
@@ -141,5 +176,4 @@
     })
   </script>
 </body>
-
 </html>
