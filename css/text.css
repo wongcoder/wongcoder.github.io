@@ -1,8 +1,14 @@
-
-
 .shadow {
   text-shadow: 2px 2px 9px black;
   subheading: 2px
+}
+
+.fjalla {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-size: 100%;
 }
 
 section {
@@ -12,13 +18,19 @@ section {
   text-shadow: 2px 2px 9px black;
 }
 
-
 .padding {
   padding-top: 20px;
 }
 
 .disablepadding {
   padding: 0px;
+}
+
+.imageholder {
+  img {
+    display:inline-block;
+    vertical-align: middle;
+  }
 }
 
 #projects {
@@ -28,18 +40,13 @@ section {
 #screencap {
   padding-right: 0px;
 }
-#imageholder {
-  img {
-    display:inline-block;
-    vertical-align: middle;
-  }
-}
+
 
 #fjalla {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  line-height: 46px;
+  line-height: 100%;
   font-size: 400%;
 }
 
