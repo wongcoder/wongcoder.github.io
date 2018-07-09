@@ -3,6 +3,14 @@
   subheading: 2px
 }
 
+.fjalla {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-size: 100%;
+}
+
 section {
   margin: 0px 0px 20px
 }
@@ -18,6 +26,13 @@ section {
   padding: 0px;
 }
 
+.imageholder {
+  img {
+    display:inline-block;
+    vertical-align: middle;
+  }
+}
+
 #projects {
   padding-top: 100px;
 }
@@ -25,12 +40,7 @@ section {
 #screencap {
   padding-right: 0px;
 }
-#imageholder {
-  img {
-    display:inline-block;
-    vertical-align: middle;
-  }
-}
+
 
 #fjalla {
   font-family: 'Fjalla One', sans-serif;
