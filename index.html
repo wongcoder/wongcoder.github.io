@@ -14,19 +14,19 @@
 <body>
   <div id="app">
     <v-app>
-      <v-toolbar id="navbar" class="transparent" scroll-off-screen scroll-target="#resume" absolute dark>
+      <v-app-bar id="navbar" class="transparent" scroll-off-screen scroll-target="#resume" absolute dark>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-          <!-- <v-btn flat v-scroll-to="'#home'" class="buttons" data-aos="fade-down">Home</v-btn> -->
-          <v-btn flat v-scroll-to="'#projects'" class="buttons" data-aos="fade-down" data-aos-delay=100>Projects</v-btn>
-          <v-btn flat href="resume/wongcoderResume.pdf" class="buttons" data-aos="fade-down" data-aos-delay=200>Resume</v-btn>
+          <!-- <v-btn text v-scroll-to="'#home'" class="buttons" data-aos="fade-down">Home</v-btn> -->
+          <v-btn text v-scroll-to="'#projects'" class="buttons" data-aos="fade-down" data-aos-delay=100>Projects</v-btn>
+          <v-btn text href="resume/wongcoderResume.pdf" class="buttons" data-aos="fade-down" data-aos-delay=200>Resume</v-btn>
         </v-toolbar-items>
-      </v-toolbar>
+      </v-app-bar>
 
       <div id="home">
-        <v-parallax src="img/parallax_50.jpg" class="text-xs-center" height=850>
-          <h1 id="fjalla" class="text-xs-center mb-1 shadow" data-aos="fade-left">Matthew Wong</h1>
-          <p class="subheading mb-3 text-xs-center shadow" data-aos="fade-right"> Programmer. Photographer.</p>
+        <v-parallax src="img/parallax_50.jpg" class="text-center" height=850>
+          <h1 id="fjalla" class="text-center mb-1 shadow" data-aos="fade-left">Matthew Wong</h1>
+          <p class="subheading mb-3 text-center shadow" data-aos="fade-right"> Programmer. Photographer.</p>
         </v-parallax>
       </div>
 
@@ -35,31 +35,34 @@
         <!-- QuickPlay -->
         <v-container>
           <v-layout align-center fill-height justify-center row wrap>
-            <v-flex md4 class="text-xs-center text-md-right imageholder" >
+            <v-flex md4 class="text-center text-md-right imageholder" >
               <img src="img/fullsize.png" alt="Nier Design" width="345px" data-aos="fade-up" data-aos-duration=500>
             </v-flex>
             <v-flex offset-md1 offset-lg0 md4>
-              <v-card flat class="transparent">
+              <v-card flat color="transparent">
                 <v-card-title>
                   <div id="quickplayText">
                     <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
                     <div class="grey--text text--darken-4 pt-2 headline" data-aos="fade-right">
-                      <h3>QuickPlay--a matchmaking service designed for classic games.</h3></div>
-                    <v-layout row>
-                      <v-flex xs6>
-                        <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Game together.</div>
-                        <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Can't play Mario Kart 64 online? No problem. Just queue up with QuickPlay.</div>
-
-                      </v-flex>
-                      <v-flex xs6 pl-3>
-                        <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Improve together.</div>
-                        <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Tired of getting stomped? An all new ELO system, just for you.</div>
-                      </v->
-                    </v-layout>
+                      <h3>QuickPlay--a matchmaking service designed for classic games.</h3>
+                    </div>
+                    <v-card-text>
+                      <v-layout row>
+                        <v-flex xs6>
+                          <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Game together.</div>
+                          <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Can't play Mario Kart 64 online? No problem. Just queue up with QuickPlay.</div>
+  
+                        </v-flex>
+                        <v-flex xs6 pl-3>
+                          <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Improve together.</div>
+                          <div class="body py-1" data-aos="fade-left" data-aos-delay=300>Tired of getting stomped? An all new ELO system, just for you.</div>
+                        </v->
+                      </v-layout>
+                    </v-card-text>
                   </div>
                 </v-card-title>
                 <v-card-actions>
-                  <v-btn flat href="https://github.com/makishanuto/quickplay" data-aos="fade-up">View on GitHub</v-btn>
+                  <v-btn text href="https://github.com/makishanuto/quickplay" data-aos="fade-up">View on GitHub</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
@@ -71,25 +74,28 @@
             <v-layout align-center justify-center row wrap>
               <v-flex offset-md3 md4>
                 <v-card flat dark class="transparent">
-                  <v-card-titlep>
+                  <v-card-title>
                     <div id="openChefText">
                       <h6 class="grey--text title" data-aos="fade-left">PROJECT</h6>
                       <div class="grey--text text--lighten-3 pt-2 headline" data-aos="fade-right">
-                        <h3>OpenChef--dine alone no more.</h3></div>
-                      <v-layout row>
-                        <v-flex xs6>
-                          <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Share.</div>
-                          <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>With OpenChef, you don't have to dine alone. Queue up and eat your favorite foods--together.</div>
-                        </v-flex>
-                        <v-flex xs6 pl-2>
-                          <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Discounts.</div>
-                          <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>Want to go to a buffet--but you're alone? No worries. One queue--and you suddenly have a group.</div>
-                        </v-flex>
-                      </v-layout>
+                        <h3>OpenChef--dine alone no more.</h3>
+                      </div>
+                      <v-card-text>
+                        <v-layout row>
+                          <v-flex xs6>
+                            <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Share.</div>
+                            <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>With OpenChef, you don't have to dine alone. Queue up and eat your favorite foods--together.</div>
+                          </v-flex>
+                          <v-flex xs6 pl-2>
+                            <div class="title grey--text text--lighten-2 padding" data-aos="fade-left" data-aos-delay=200>Discounts.</div>
+                            <div class="body pt-1 grey--text text--lighten-1" data-aos="fade-left" data-aos-delay=300>Want to go to a buffet--but you're alone? No worries. One queue--and you suddenly have a group.</div>
+                          </v-flex>
+                        </v-layout>
+                      </v-card-text>
                     </div>
                   </v-card-title>
                   <v-card-actions>
-                    <v-btn flat href="https://github.com/makishanuto/openchef" data-aos="fade-up">View on GitHub</v-btn>
+                    <v-btn text href="https://github.com/makishanuto/openchef" data-aos="fade-up">View on GitHub</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-flex>
@@ -114,20 +120,22 @@
                     <div class="grey--text text--darken-4 pt-2 headline" data-aos="fade-right">
                       <h3>League of Legends--now in Korean.</h3>
                     </div>
-                    <v-layout row>
-                      <v-flex xs6>
-                        <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>A mod for you.</div>
-                        <div class="body pt-1" data-aos="fade-left" data-aos-delay=300>League of Korean is an unofficially supported mod, designed to change your client's language into Korean. Perfect for people learning Korean.</div>
-                      </v-flex>
-                      <v-flex xs6 pl-2>
-                        <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Fully functional.</div>
-                        <div class="body pt-1" data-aos="fade-left" data-aos-delay=300>Want to message your North American friends, but have the Korean langauge? Now you can. Coded in Electron, ready for you.</div>
-                      </v-flex>
-                    </v-layout>
+                    <v-card-text>
+                      <v-layout row>
+                        <v-flex xs6>
+                          <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>A mod for you.</div>
+                          <div class="body pt-1" data-aos="fade-left" data-aos-delay=300>League of Korean is an unofficially supported mod, designed to change your client's language into Korean. Perfect for people learning Korean.</div>
+                        </v-flex>
+                        <v-flex xs6 pl-2>
+                          <div class="title grey--text text--darken-4 padding" data-aos="fade-left" data-aos-delay=200>Fully functional.</div>
+                          <div class="body pt-1" data-aos="fade-left" data-aos-delay=300>Want to message your North American friends, but have the Korean langauge? Now you can. Coded in Electron, ready for you.</div>
+                        </v-flex>
+                      </v-layout>
+                    </v-card-text>
                   </div>
                 </v-card-title>
                 <v-card-actions>
-                  <v-btn flat href="https://github.com/makishanuto/league-of-korean" data-aos="fade-up">View on GitHub</v-btn>
+                  <v-btn text href="https://github.com/makishanuto/league-of-korean" data-aos="fade-up">View on GitHub</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
@@ -141,19 +149,19 @@
       <div id="resume">
         <v-container>
           <v-layout justify-center row wrap py-5>
-            <v-flex md2 xs4 imageholder text-xs-center>
+            <v-flex md2 xs4 imageholder text-center>
               <a href="https://instagram.com/wongcoder">
                 <img id="instagramIcon" src="img/instagram.png" height=100 data-aos="fade-left">
               </a>
 
             </v-flex>
-            <v-flex md2 xs4 imageholder text-xs-center>
+            <v-flex md2 xs4 imageholder text-center>
               <a href="https://github.com/wongcoder">
                 <img id="githubIcon" src="img/github.png" height=100 data-aos="fade-up">
               </a>
             </v-flex>
 
-            <v-flex md2 xs4 imageholder text-xs-center>
+            <v-flex md2 xs4 imageholder text-center>
               <a href="resume/wongcoderResume.pdf">
                 <img id="resumeIcon" src="img/document-icon.png" height=100 data-aos="fade-right">
               </a>
@@ -162,17 +170,17 @@
         </v-container>
       </div>
 
-      <!-- footer -->
+      <!-- footer
      <v-divider> </v-divider>
       <v-footer height="auto">
         <v-layout row wrap justify-center align-content-center>
-          <v-flex xs12 class="text-xs-center">
+          <v-flex xs12 class="text-center">
             <v-flex class="fjalla grey--text text--darken-2">
               Coded with Vuetify. A wongcode project. Matthew Wong - 2018
             </v-flex>
           </v-flex>
         </v-layout>
-      </v-footer>
+      </v-footer> -->
     </v-app>
   </div>
 
