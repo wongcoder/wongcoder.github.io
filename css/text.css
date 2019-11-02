@@ -11,6 +11,13 @@
   font-size: 100%;
 }
 
+.fix {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
 .buttons {
   text-shadow: 2px 2px 9px black;
 }
@@ -23,12 +30,6 @@
   padding: 0px;
 }
 
-.imageholder {
-  img {
-    display:inline-block;
-    vertical-align: middle;
-  }
-}
 
 #projects {
   padding-top: 100px;
